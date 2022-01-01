@@ -43,7 +43,7 @@ class ChangeDetectionStore:
                 'application': {
                     'password': False,
                     'base_url' : None,
-                    'extract_title_as_title': False,
+                    'extract_title_as_title': True,
                     'fetch_backend': 'html_requests',
                     'global_ignore_text': [], # List of text to ignore when calculating the comparison checksum
                     'notification_urls': [], # Apprise URL list
@@ -76,9 +76,9 @@ class ChangeDetectionStore:
             'history': {},  # Dict of timestamp and output stripped filename
             'ignore_text': [], # List of text to ignore when calculating the comparison checksum
             # Custom notification content
-            'notification_urls': ["tgram://5049967866:AAEIoBcv0pg4nLtv4AngYAjq9QVLrpLlW14/399044750/772778171/", "https://discordapp.com/api/webhooks/926571431150633001/Z-j4VEbsWaDmuqT2YWYfv7FIgPqo68tZ1X_9Ja-piPIjzLFDlZSOCghwzNtrG4gniYNZ"], # List of URLs to add to the notification Queue (Usually AppRise)
-            'notification_title': "RTX CAAAAZZZZZO",
-            'notification_body': "https://www.mediaworld.it/rtx-day",
+            'notification_urls': ["tgram://5049967866:AAEIoBcv0pg4nLtv4AngYAjq9QVLrpLlW14/399044750/772778171/"], # List of URLs to add to the notification Queue (Usually AppRise)
+            'notification_title': None,
+            'notification_body': None,
             'notification_format': None,
             'css_filter': "",
             'trigger_text': [],  # List of text or regex to wait for until a change is detected
