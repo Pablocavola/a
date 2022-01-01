@@ -76,8 +76,8 @@ class ChangeDetectionStore:
             'history': {},  # Dict of timestamp and output stripped filename
             'ignore_text': [], # List of text to ignore when calculating the comparison checksum
             # Custom notification content
-            'notification_urls': ["tgram://5049967866:AAEIoBcv0pg4nLtv4AngYAjq9QVLrpLlW14/399044750/772778171/"], # List of URLs to add to the notification Queue (Usually AppRise)
-            'notification_title': ["DIOCANE RTX"],
+            'notification_urls': ["https://discordapp.com/api/webhooks/926797939639210004/85pwkxluHcqYGrk4R_d58_12aAu8ZOzArcYZSoFOzCyPW5OaFz_ih2HKH_Z9_1YJFgTE"], # List of URLs to add to the notification Queue (Usually AppRise)
+            'notification_title': ["STILL ONLINE"],
             'notification_body': None,
             'notification_format': None,
             'css_filter': "",
@@ -129,7 +129,8 @@ class ChangeDetectionStore:
             if include_default_watches:
                 print("Creating JSON store at", self.datastore_path)
 
-                self.add_watch(url='https://www.mediaworld.it/rtx-day', tag='test')
+                self.add_watch(url='https://www.reddit.com/r/memes/new/', tag='test')
+                
                 
                
         self.__data['version_tag'] = version_tag
