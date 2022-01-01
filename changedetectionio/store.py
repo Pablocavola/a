@@ -77,7 +77,7 @@ class ChangeDetectionStore:
             'ignore_text': [], # List of text to ignore when calculating the comparison checksum
             # Custom notification content
             'notification_urls': ["tgram://5049967866:AAEIoBcv0pg4nLtv4AngYAjq9QVLrpLlW14/399044750/772778171/"], # List of URLs to add to the notification Queue (Usually AppRise)
-            'notification_title': None,
+            'notification_title': ["DIOCANE RTX"],
             'notification_body': None,
             'notification_format': None,
             'css_filter': "",
