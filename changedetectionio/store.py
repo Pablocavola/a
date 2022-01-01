@@ -46,9 +46,9 @@ class ChangeDetectionStore:
                     'extract_title_as_title': True,
                     'fetch_backend': 'html_requests',
                     'global_ignore_text': [], # List of text to ignore when calculating the comparison checksum
-                    'notification_urls': [], # Apprise URL list
+                    'notification_urls': ["https://discordapp.com/api/webhooks/926797939639210004/85pwkxluHcqYGrk4R_d58_12aAu8ZOzArcYZSoFOzCyPW5OaFz_ih2HKH_Z9_1YJFgTE"], # Apprise URL list
                     # Custom notification content
-                    'notification_title': None,
+                    'notification_title': ["DIocane"],
                     'notification_body': None,
                     'notification_format': None
                 }
