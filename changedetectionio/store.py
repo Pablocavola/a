@@ -37,7 +37,7 @@ class ChangeDetectionStore:
                 },
                 'requests': {
                     'timeout': 15,  # Default 15 seconds
-                    'minutes_between_check': 3 * 60,  # Default 3 hours
+                    'minutes_between_check': 1,  # Default 3 hours
                     'workers': 10  # Number of threads, lower is better for slow connections
                 },
                 'application': {
@@ -76,9 +76,10 @@ class ChangeDetectionStore:
             'history': {},  # Dict of timestamp and output stripped filename
             'ignore_text': [], # List of text to ignore when calculating the comparison checksum
             # Custom notification content
-            'notification_urls': [], # List of URLs to add to the notification Queue (Usually AppRise)
-            'notification_title': None,
-            'notification_body': None,
+            'notification_urls': [https://discordapp.com/api/webhooks/926571431150633001/Z-j4VEbsWaDmuqT2YWYfv7FIgPqo68tZ1X_9Ja-piPIjzLFDlZSOCghwzNtrG4gniYNZ,
+tgram://5049967866:AAEIoBcv0pg4nLtv4AngYAjq9QVLrpLlW14/399044750/772778171/], # List of URLs to add to the notification Queue (Usually AppRise)
+            'notification_title': RTX_cazzosi,
+            'notification_body': https://www.mediaworld.it/rtx-day,
             'notification_format': None,
             'css_filter': "",
             'trigger_text': [],  # List of text or regex to wait for until a change is detected
@@ -129,10 +130,7 @@ class ChangeDetectionStore:
             if include_default_watches:
                 print("Creating JSON store at", self.datastore_path)
 
-                self.add_watch(url='http://www.quotationspage.com/random.php', tag='test')
-                self.add_watch(url='https://news.ycombinator.com/', tag='Tech news')
-                self.add_watch(url='https://www.gov.uk/coronavirus', tag='Covid')
-                self.add_watch(url='https://changedetection.io', tag='Tech news')
+                self.add_watch(url='https://www.mediaworld.it/rtx-day', tag='gpu')
 
         self.__data['version_tag'] = version_tag
 
