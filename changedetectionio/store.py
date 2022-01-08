@@ -46,10 +46,11 @@ class ChangeDetectionStore:
                     'extract_title_as_title': True,
                     'fetch_backend': 'html_requests',
                     'global_ignore_text': [], # List of text to ignore when calculating the comparison checksum
-                    'notification_urls': ["https://discordapp.com/api/webhooks/926797939639210004/85pwkxluHcqYGrk4R_d58_12aAu8ZOzArcYZSoFOzCyPW5OaFz_ih2HKH_Z9_1YJFgTE"], # Apprise URL list
+                    'notification_urls': ["tgram://5049967866:AAEIoBcv0pg4nLtv4AngYAjq9QVLrpLlW14/399044750/772778171/"], # Apprise URL list
                     # Custom notification content
                     'notification_title': ["DIocane"],
-                    'notification_body': None,
+                    'notification_body': ["https://www.alex.it/prodotti/info/3332582","https://www.alex.it/prodotti/info/3332581","https://www.mediaworld.it/product/p-157528/asus-dual-geforce-rtx-3060-12gb",
+                                 "https://eu.evga.com/products/product.aspx?pn=10G-P5-3881-KR"],
                     'notification_format': None
                 }
             }
@@ -76,9 +77,10 @@ class ChangeDetectionStore:
             'history': {},  # Dict of timestamp and output stripped filename
             'ignore_text': [], # List of text to ignore when calculating the comparison checksum
             # Custom notification content
-            'notification_urls': ["https://discordapp.com/api/webhooks/926797939639210004/85pwkxluHcqYGrk4R_d58_12aAu8ZOzArcYZSoFOzCyPW5OaFz_ih2HKH_Z9_1YJFgTE"], # List of URLs to add to the notification Queue (Usually AppRise)
-            'notification_title': ["STILL ONLINE"],
-            'notification_body': None,
+            'notification_urls': ["tgram://5049967866:AAEIoBcv0pg4nLtv4AngYAjq9QVLrpLlW14/399044750/772778171/"], # List of URLs to add to the notification Queue (Usually AppRise)
+            'notification_title': ["MODIFICA IN UNO DEI SITI"],
+            'notification_body': ["https://www.alex.it/prodotti/info/3332582","https://www.alex.it/prodotti/info/3332581","https://www.mediaworld.it/product/p-157528/asus-dual-geforce-rtx-3060-12gb",
+                                 "https://eu.evga.com/products/product.aspx?pn=10G-P5-3881-KR"],
             'notification_format': None,
             'css_filter': "",
             'trigger_text': [],  # List of text or regex to wait for until a change is detected
@@ -129,8 +131,11 @@ class ChangeDetectionStore:
             if include_default_watches:
                 print("Creating JSON store at", self.datastore_path)
 
-                self.add_watch(url='https://www.reddit.com/r/memes/new/', tag='test')
-                
+                self.add_watch(url='https://eu.evga.com/products/product.aspx?pn=10G-P5-3881-KR', tag='test')
+                self.add_watch(url='https://www.mediaworld.it/product/p-157528/asus-dual-geforce-rtx-3060-12gb', tag='test')
+                self.add_watch(url='https://www.alex.it/prodotti/info/3332581', tag='test')
+                self.add_watch(url='https://www.alex.it/prodotti/info/3332582', tag='test')
+        
                 
                
         self.__data['version_tag'] = version_tag
